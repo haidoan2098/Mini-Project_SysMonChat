@@ -34,7 +34,7 @@ thông tin CPU, RAM theo yêu cầu.
 
 ## 6. Thay đổi path file log ở file `server_utils.c`
 
-![alt text](image.png)
+![alt text](https://i.ibb.co/HLNfcvF0/image.png) 
 
 ## 7. Clone Project
 ```bash
