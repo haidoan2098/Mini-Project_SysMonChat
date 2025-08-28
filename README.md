@@ -27,11 +27,16 @@ thông tin CPU, RAM theo yêu cầu.
     ![](https://i.imgur.com/2oWLRpZ.png)
 
 - Daemon: 
+
     ![](https://i.imgur.com/o5nYwSb.png) 
 
 ## 5. [Link Demo Project](https://www.youtube.com/watch?v=OBRVuu0GrFg) 
 
-## 6. Clone Project
+## 6. Thay đổi path file log ở file `server_utils.c`
+
+![alt text](image.png)
+
+## 7. Clone Project
 ```bash
 git clone https://github.com/haidoan2098/Mini-Project_SysMonChat.git 
 ```
