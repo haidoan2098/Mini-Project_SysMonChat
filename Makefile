@@ -1,6 +1,7 @@
 # Compiler and flags
-CC = gcc
-CFLAGS = -Wall -Wextra -g -Iinc
+CC      = gcc
+CFLAGS  = -Wall -Wextra -g -Iinc
+LDFLAGS = -pthread -lrt
 
 # Directories
 SRC_DIR     = src
@@ -35,15 +36,15 @@ $(BIN_DIR):
 
 # Build server app
 $(SERVER_TARGET): $(SERVER_OBJS) | $(BIN_DIR)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Build client app
 $(CLIENT_TARGET): $(CLIENT_OBJS) | $(BIN_DIR)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Build monitor daemon
 $(DAEMON_TARGET): $(DAEMON_OBJS) | $(BIN_DIR)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Compile rule (generic for all .c in project)
 %.o: %.c
