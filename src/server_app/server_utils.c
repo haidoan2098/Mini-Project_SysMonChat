@@ -13,7 +13,7 @@ int client_count = 0;
 pthread_mutex_t client_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_mutex_t log_mutex = PTHREAD_MUTEX_INITIALIZER;
 
-const char *log_path = "/home/haidoan2098/Workspace/MiniProject_SysMonChat/log/server_messages.log";  
+const char *log_path = "/home/haidoan2098/Workspace/Mini-Project_SysMonChat/log/server_messages.log";  
 
 
 void add_client(int sock_fd, const char *ip, int port, connection_status_t status) {
